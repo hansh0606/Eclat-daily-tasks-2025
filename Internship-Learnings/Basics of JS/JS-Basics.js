@@ -116,7 +116,7 @@ console.log(newArr)
  */
  //OBJECTS : 
 
- const SoftwareEngineer = {
+ /*const SoftwareEngineer = {
     name:"Hanshvee",
     role:"Mobile developer",
     technology:"React Native"
@@ -141,4 +141,82 @@ const ObjectCreation = (name , role , technology) =>
     return Intro;
 }
 
-console.log(ObjectCreation("Hanshvee Aditya Patil" , "Mobile developer" , "React Native"))
+console.log(ObjectCreation("Hanshvee Aditya Patil" , "Mobile developer" , "React Native"))*/
+
+
+//LOOPS
+
+const names = ["Hanshvee","Hriday","Mehul","Heet","Archana","Ashsih"]
+
+const numbers = [1,2,3,4,5,6]
+const result = [] 
+//Simple
+/*for(let i=0;i<names.length;i++)
+{
+    console.log(names[i])
+}
+
+//for of
+for(let name of names)
+{
+    console.log(name)
+}
+
+for(let num of numbers)
+{
+    result.push(num)
+}
+console.log(result)*/
+
+
+//Count letters of sentence
+let count = 0;
+
+//for in loop gives indexes(keys)
+//for of loop gives values
+const countLetters= (Sentence) =>
+{
+    for(let letter in Sentence)
+    {
+        //console.log(Number(letter) + (1))
+        count = Number(letter) + 1
+    }
+
+    return {count};
+}
+
+let countedLetters = countLetters("Hello My name is Hanshvee , I am learning Javascript")
+console.log(countedLetters)
+
+//Sum of array elements
+let sum = 0;
+const sumFunc = (ArrayofNum) =>
+{
+    for(let num of numbers)
+    {
+        sum += num;
+    }
+
+    return {sum}
+}
+
+
+let ans = console.log(sumFunc(numbers)) 
+
+//find Max from Array
+let maxi = numbers[0]
+const maxFunc = (ArrayofNum) =>
+{
+    for(let num of numbers)
+    {
+        if(num>maxi)
+        {
+            maxi = num
+        }
+    }
+
+    return {maxi}
+}
+
+
+console.log(maxFunc(numbers))
