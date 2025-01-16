@@ -168,9 +168,9 @@ for(let num of numbers)
 }
 console.log(result)*/
 
-
+let phrase = "Hello My name is Hanshvee , I am learning Javascript"
 //Count letters of sentence
-let count = 0;
+/*let count = 0;
 
 //for in loop gives indexes(keys)
 //for of loop gives values
@@ -185,11 +185,12 @@ const countLetters= (Sentence) =>
     return {count};
 }
 
-let countedLetters = countLetters("Hello My name is Hanshvee , I am learning Javascript")
-console.log(countedLetters)
+
+let countedLetters = countLetters(phrase)
+console.log(countedLetters)*/
 
 //Sum of array elements
-let sum = 0;
+/*let sum = 0;
 const sumFunc = (ArrayofNum) =>
 {
     for(let num of numbers)
@@ -219,4 +220,90 @@ const maxFunc = (ArrayofNum) =>
 }
 
 
-console.log(maxFunc(numbers))
+console.log(maxFunc(numbers))*/
+
+//Count frequency of letter in any phrase
+/*let frequency = {}
+const freq = (phrase)=>{
+
+    for(let letter of phrase)
+    {
+        if(letter in frequency)
+        {
+            frequency[letter] = frequency[letter]+1
+        }
+
+        else{
+            frequency[letter] = 1
+        }
+    }
+
+    return frequency
+}
+
+console.log(freq(phrase))*/
+
+//---------------------------------------------------------------------------------------
+//Count frequency of words in any phrase
+
+let wordfreq = {}
+
+const wordFreq = (phrase)=>
+{
+    let wordArray = phrase.split(' ')
+    //console.log(wordArray)
+    //return freq(wordArray)
+    for(let word of wordArray )
+    {
+        if(wordfreq in wordArray)
+            wordfreq[word]++
+
+        else
+        wordfreq[word] = 1;
+    }
+
+    return {wordfreq};
+}
+
+console.log(wordFreq(phrase))
+
+const pracArray = [2,3,4,5,6,7,8]
+//map() : loops and return array
+const mapi = (array)=> pracArray.map(number => 2*number)
+console.log(mapi(pracArray))
+
+//filter() : loops and return array with conditions
+const filter = (array) => pracArray.filter(number => number > 6)
+console.log(filter(pracArray))
+
+
+//Rdeuce() : loops and give you back the accumulator
+// The reduce() method runs a function on each array element to produce (reduce it to) a single value.
+// The reduce() method works from left-to-right in the array.
+// The reduce() method does not reduce the original array.
+
+let sum = numbers.reduce(myFunction);
+
+function myFunction(total, value, index, array) {
+  return total + value;
+}
+
+// Note that the function takes 4 arguments:
+
+// The total (the initial value / previously returned value)
+// The item value
+// The item index
+// The array itself
+// The example above does not use the index and array parameters. It can be rewritten to:
+
+let sumUsingReduce = numbers.reduce(myFunction);
+
+function myFunction(total, value) {
+  return total + value;
+}
+
+let SUM = numbers.reduce(function(prev,curr){
+    return prev+curr
+})
+
+console.log(SUM)

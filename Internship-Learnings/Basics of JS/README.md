@@ -1,6 +1,6 @@
 # JavaScript Basics and Practice
 
-This repository contains JavaScript exercises to help you explore and understand key concepts.
+This repository contains JavaScript exercises to understand key concepts.
 
 ## Concepts Explored
 
@@ -16,6 +16,10 @@ This repository contains JavaScript exercises to help you explore and understand
 - **Sum & Max Functions**: Implementing functions to calculate the sum of array elements and find the maximum value in an array.
   - **Sum Function**: Calculates the sum of array elements using the `for of` loop.
   - **Max Function**: Finds the maximum value from an array.
+- **Frequency Counting**: Counting the frequency of letters and words in a phrase.
+- **Array Methods**: `map()`, `filter()`, and `reduce()` for array manipulation.
+- **Array of Objects**: Filtering, mapping, and displaying array data using `JSON.stringify()` and `join()`.
+- **DOM Manipulation**: Displaying array data in HTML using `innerHTML`.
 
 ## Code Snippets
 
@@ -25,5 +29,9 @@ This repository contains JavaScript exercises to help you explore and understand
 - **Object Handling**: Covers object creation, accessing properties, and using functions to generate dynamic content.
 - **Looping Techniques**: Includes usage of `for`, `for of`, and `for in` loops for iterating over arrays and objects.
 - **Sum and Max Functions**: Functions to sum array elements and find the maximum value in an array.
+- **Frequency Counting**: Functions for letter and word frequency in a phrase.
+- **Array Methods**: `map()`, `filter()`, and `reduce()` for array manipulation.
+- **Array of Objects**: Filtering, mapping, and displaying data using `JSON.stringify()` and `join()`.
+- **DOM Manipulation**: Displaying arrays of objects on the webpage dynamically.
 
 This repository serves as a practical guide for mastering essential JavaScript concepts, commonly used in web development.
