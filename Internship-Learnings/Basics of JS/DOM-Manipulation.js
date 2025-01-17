@@ -11,8 +11,13 @@ console.log(networthOf)
 
 //DOM MANIPULATION
 //Use of Strigify
-let index = document.getElementById('index')
+//let index = document.getElementById('index')
 //ways to display array of objects on browser
-index.innerHTML = `<h2>${nameOfActors}</h2>`
+//index.innerHTML = `<h2>${nameOfActors}</h2>`
 //index.innerHTML = `<h2>${JSON.stringify(networthOf)}</h2>`
 //index.innerHTML = networthOf.map(actor => `<h1>${actor.name}, ${actor.networth} CR</h1>`).join('');
+
+let heading1 = document.getElementById('h2')
+console.log(heading1.innerText)
+heading1.style.color='pink'
+heading1.style.backgroundColor='black'

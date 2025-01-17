@@ -307,3 +307,31 @@ let SUM = numbers.reduce(function(prev,curr){
 })
 
 console.log(SUM)
+
+//Access object element with reduce
+//Arguments taken by reduce reduce(function , number)
+const actors = [
+    {name:"Allu Arjun" , networth:600},
+    {name:"Ram Charan" , networth:200},
+    {name:"Allu Sneha Reddy" , networth:700}
+]
+
+let calNetworth =  actors.reduce((acc , curr) => acc + curr.networth,0)
+console.log('calNetworth : '+ calNetworth)
+
+//Higher Order functions : function that takes arguments as a function
+
+
+
+
+//Calculator
+
+const summation = (a,b) =>{ return a+b }
+const Multiplication = (a,b) => a*b
+const subtraction = (a,b) =>a-b
+const Division = (a,b) =>a/b
+
+console.log("summation : "+summation(2,3))
+console.log("Multiplication : "+Multiplication(2,3))
+console.log("subtraction : "+subtraction(2,3))
+console.log("Division : "+Division(2,3))
