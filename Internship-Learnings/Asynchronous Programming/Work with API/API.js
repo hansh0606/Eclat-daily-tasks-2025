@@ -19,3 +19,13 @@ button.onclick  = () => {
 
 
 console.log("3rd run")
+
+console.log("Button Clicked")
+    // text.innerText = `Button Clicked ${count++}`
+
+    fetch("https://dog.ceo/api/breeds/image/random") //makes a request and waits for the server's response and return the respose to .then()
+    .then(Response => Response.json()) //processes the Response object into JSON data.
+    .then(json => { //handles the JSON data
+        console.log("2nd run",json)
+        //image.innerHTML = `<img src='${json.message}' hight = 400 width=400/>`
+    })
