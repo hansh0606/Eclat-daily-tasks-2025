@@ -335,3 +335,46 @@ console.log("summation : "+summation(2,3))
 console.log("Multiplication : "+Multiplication(2,3))
 console.log("subtraction : "+subtraction(2,3))
 console.log("Division : "+Division(2,3))
+
+//Unique cases 
+let arrayNum = [1,2,3,4]
+console.log(arrayNum.indexOf("3"))//uses === means also checks the type , returns index
+console.log(arrayNum.indexOf(3))
+let sent = 'hanshvee aditya patil'
+console.log(sent.indexOf('a'))
+console.log(sent.indexOf('H'))//index of is case sensitive
+console.log(arrayNum.includes("3"))//also case sensitive
+console.log(arrayNum.includes(3))//also case sensitive , returns true-false
+
+//var , let , const
+var a
+console.log(a)
+
+
+
+//const c //syntax error
+const c=0 
+console.log(c)
+
+{
+    var a=9
+    console.log(a)
+    var a=10
+    console.log(a)
+}
+console.log("var a="+a)
+
+let b
+console.log("outside block = "+b)
+{
+    let b=10
+    console.log("inside block 1 = "+b)
+   // let b=10//no redeclaration //error: already declared
+   b=11//reassihnment allowed
+    console.log("inside block 2 = "+b)
+}
+
+console.log("outside block-2  = "+b)
+
+let arrayEmpty = []
+console.log(arrayEmpty.length)
