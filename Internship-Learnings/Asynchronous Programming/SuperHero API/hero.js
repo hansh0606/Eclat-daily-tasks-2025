@@ -13,13 +13,29 @@ const getNameOfHero=()=>
 searchButton.onclick= () =>{
     
     const heroName = getNameOfHero()
-    console.log(heroName)
+    if(!heroName)
+    {
+        alert("Enter Name of Character ")
+    }
+    
     fetch(`${Base_API}/search/${heroName}`)
     .then(Response => Response.json())
     .then(json => {
-        const imageUrl = json.results[0].image.url
-        heroImg.innerHTML = `<img src='${imageUrl}'/>`
+        if(json.response="success"&& json.results && json.results.length > 0 )
+        {
+            const imageUrl = json.results[0].image.url
+            heroImg.innerHTML = `<img src='${imageUrl}'/>`
+        }
+
+        else{
+            alert("No such character found")
+        }
+        
     })
+    .catch(error => {
+        console.error("Error fetching data:", error);
+        alert("Failed to fetch data. Please try again later.");
+    });
 
 
 } 
