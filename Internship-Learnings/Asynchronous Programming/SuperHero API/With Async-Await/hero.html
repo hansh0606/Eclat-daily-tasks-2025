@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Super Hero API with Async-Await</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f9;
+      color: #333;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+
+    h2 {
+      color: #444;
+    }
+
+    p {
+      font-size: 14px;
+      text-align: center;
+      max-width: 600px;
+      margin-bottom: 20px;
+    }
+
+    input, button {
+      padding: 10px;
+      margin: 5px;
+      font-size: 16px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+
+    button {
+      cursor: pointer;
+      background-color: #007bff;
+      color: white;
+      border: none;
+    }
+
+    button:hover {
+      background-color: #0056b3;
+    }
+
+    #heroImage img {
+      margin-top: 20px;
+      border-radius: 10px;
+      max-width: 100%;
+      max-height: 300px;
+    }
+
+    #heroInfo {
+      margin-top: 20px;
+      text-align: center;
+      font-size: 16px;
+    }
+  </style>
+</head>
+
+<body>
+  <h2>Let's Learn to Work with an API</h2>
+  <p>You can search for superheroes or villains like "Batman" or "Thanos" or generate a random hero below.</p>
+
+  <input id="searchInput" type="text" placeholder="Enter hero ID or name" />
+  <button id="searchButton">Search</button>
+  <button id="newHeroButton">Random Hero</button>
+
+  <div id="heroImage"><img src="" alt="Hero Image" /></div>
+  <div id="heroInfo"></div>
+
+  <script src="hero.js"></script>
+</body>
+
+</html>

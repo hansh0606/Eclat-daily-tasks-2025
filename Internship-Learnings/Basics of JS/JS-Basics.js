@@ -289,7 +289,7 @@ function myFunction(total, value, index, array) {
 }
 
 // Note that the function takes 4 arguments:
-
+//array.reduce(callback(accumulator, currentValue, currentIndex, array), initialValue)
 // The total (the initial value / previously returned value)
 // The item value
 // The item index
