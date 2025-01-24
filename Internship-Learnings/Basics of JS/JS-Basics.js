@@ -246,7 +246,7 @@ console.log(freq(phrase))*/
 //---------------------------------------------------------------------------------------
 //Count frequency of words in any phrase
 
-let wordfreq = {}
+/*let wordfreq = {}
 
 const wordFreq = (phrase)=>
 {
@@ -306,7 +306,7 @@ let SUM = numbers.reduce(function(prev,curr){
     return prev+curr
 })
 
-console.log(SUM)
+console.log(SUM)*/
 
 //Access object element with reduce
 //Arguments taken by reduce reduce(function , number)
@@ -316,8 +316,20 @@ const actors = [
     {name:"Allu Sneha Reddy" , networth:700}
 ]
 
-let calNetworth =  actors.reduce((acc , curr) => acc + curr.networth,0)
-console.log('calNetworth : '+ calNetworth)
+let obj = {name:"Hanhsvve",networth:900}
+actors.push(obj)
+console.log(actors)
+actors.push
+
+let ActorName =  actors.reduce((acc , curr) =>{
+    if(curr.name.includes("Allu"))
+    {
+         acc.push(curr.name)
+    }
+    return acc
+    //return  acc + curr.networth
+},[])
+console.log('Actor who conatins Allu  : '+ ActorName)
 
 //Higher Order functions : function that takes arguments as a function
 
@@ -326,7 +338,7 @@ console.log('calNetworth : '+ calNetworth)
 
 //Calculator
 
-const summation = (a,b) =>{ return a+b }
+/*const summation = (a,b) =>{ return a+b }
 const Multiplication = (a,b) => a*b
 const subtraction = (a,b) =>a-b
 const Division = (a,b) =>a/b
@@ -377,4 +389,4 @@ console.log("outside block = "+b)
 console.log("outside block-2  = "+b)
 
 let arrayEmpty = []
-console.log(arrayEmpty.length)
+console.log(arrayEmpty.length)*/
