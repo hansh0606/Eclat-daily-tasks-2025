@@ -39,7 +39,7 @@ printEven(num)*/
     return p1*p2;
 }
   
-  console.log(mul(2,3));*/
+  //console.log(mul(2,3));*/
 
 
   //Arrays//
