@@ -1,7 +1,7 @@
 import React from 'react';
-import {Image, Pressable, StyleSheet, Text, View, FlatList} from 'react-native';
-//import { FlatList } from "react-native-web";
+import { Image, Pressable, StyleSheet, Text, View, FlatList } from 'react-native';
 
+// Sample project data
 const projects = [
   {
     id: '1',
@@ -12,8 +12,7 @@ const projects = [
   {
     id: '2',
     projectName: 'Landmine Detection',
-    description:
-      'AI/ML-based object detection system for landmine categorization.',
+    description: 'AI/ML-based object detection system for landmine categorization.',
     technologies: 'YOLO, AI, Object Detection',
   },
   {
@@ -41,49 +40,70 @@ const projects = [
 
 function App() {
   return (
-    <>
-      <View style={{display: 'flex', alignItems: 'center'}}>
-        <Text style={{fontSize: 30, fontWeight: 'bold'}}>Hanshvee Patil</Text>
-      </View>
-      <View style={{display: 'flex', alignItems: 'center'}}>
+    <View style={{ flex: 1, alignItems: 'center', backgroundColor: '#f5f5f5' }}>
+      {/* Profile Card */}
+      <View
+        style={{
+          marginTop: 30,
+          padding: 20,
+          backgroundColor: '#ffffff',
+          width: '90%',
+          borderRadius: 10,
+          elevation: 5, // Adds shadow for better visibility
+          alignItems: 'center',
+          marginBottom: 30,
+        }}>
         <Image
           source={require('./src/assets/HanshveeFormalPhoto.jpg')}
           style={{
-            width: 100,
-            height: 100,
-            borderRadius: 100,
-          }}></Image>
-        <Text>hanshpatil1982@gmail.com</Text>
+            width: 120,
+            height: 120,
+            borderRadius: 60,
+            marginBottom: 10,
+          }}
+        />
+        <Text style={{ fontSize: 24, fontWeight: 'bold' }}>Hanshvee Patil</Text>
+        <Text style={{ color: '#888', marginBottom: 20 }}>hanshpatil1982@gmail.com</Text>
+
+        <View
+          style={{
+            flexDirection: 'row',
+            justifyContent: 'space-around',
+            width: '100%',
+            marginBottom: 10,
+          }}>
+          <Pressable onPress={() => console.log('LinkedIn pressed')}>
+            <Text style={{ color: '#0077b5', fontSize: 16 }}>LinkedIn</Text>
+          </Pressable>
+          <Pressable onPress={() => console.log('GitHub pressed')}>
+            <Text style={{ color: '#333', fontSize: 16 }}>GitHub</Text>
+          </Pressable>
+        </View>
       </View>
 
-      <View
-        style={{
-          display: 'flex',
-          flexDirection: 'row',
-          justifyContent: 'space-between',
-        }}>
-        <Text>LinkedIn</Text>
-        <Text>GitHub</Text>
-        <Text>hanshpatil1982@gmail.com</Text>
-        <Text></Text>
-      </View>
-      <View style={{padding: 20}}>
-        <FlatList
-          data={projects}
-          renderItem={({item}) => {
-            return (
-              <View style={{marginBottom: 20}}>
-                <View style={{display: 'flex', flexDirection: 'row',justifyContent:'space-between'}}>
-                  <Text> {item.projectName}</Text>
-                  <Text>{item.technologies}</Text>
-                </View>
-
-                <Text>{item.description}</Text>
+      {/* Projects List */}
+      <FlatList
+        data={projects}
+        renderItem={({ item }) => {
+          return (
+            <View style={{ marginBottom: 20, paddingHorizontal: 10 }}>
+              <View
+                style={{
+                  flexDirection: 'row',
+                  justifyContent: 'space-between',
+                  marginBottom: 5,
+                }}>
+                <Text style={{ fontSize: 18, fontWeight: 'bold' }}>
+                  {item.projectName}
+                </Text>
+                <Text style={{ fontSize: 14, color: '#888' }}>{item.technologies}</Text>
               </View>
-            );
-          }}></FlatList>
-      </View>
-    </>
+              <Text style={{ color: '#555' }}>{item.description}</Text>
+            </View>
+          );
+        }}
+      />
+    </View>
   );
 }
 
