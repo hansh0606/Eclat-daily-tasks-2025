@@ -16,13 +16,15 @@ const projects = [
     projectName: 'InQgen',
     description: 'A platform that generates interview questions from resumes.',
     technologies: 'React.js, PyPDF2, OpenAI',
+    link: 'https://github.com/hansh0606/InQueGen',
   },
   {
     id: '2',
-    projectName: 'Landmine Detection',
+    projectName: 'Landmine Type Detection',
     description:
       'AI/ML-based object detection system for landmine categorization.',
     technologies: 'YOLO, AI, Object Detection',
+    link: 'https://github.com/hansh0606/Landmine_type_Detection',
   },
   {
     id: '3',
@@ -30,6 +32,7 @@ const projects = [
     description:
       'A Spring Boot Java application with CRUD functionality for efficient sports event management.',
     technologies: 'Spring Boot, Hibernate, React, MySQL',
+    link: 'https://github.com/hansh0606/SportsCentral',
   },
   {
     id: '4',
@@ -37,6 +40,7 @@ const projects = [
     description:
       'A PostgreSQL-based console application for Kabaddi league management, handling courts, teams, matches, and players.',
     technologies: 'PostgreSQL',
+    link: 'https://github.com/hansh0606/KabaddiStrive',
   },
   {
     id: '5',
@@ -44,12 +48,13 @@ const projects = [
     description:
       'A platform connecting boxers with trainers for personalized training experiences.',
     technologies: 'React.js, Node.js, MongoDB',
+    link: 'https://github.com/hansh0606/Boxico',
   },
 ];
 
 function App() {
   return (
-    <View style={{flex: 1, alignItems: 'center', backgroundColor: '#808080'}}>
+    <View style={{flex: 1, alignItems: 'center', backgroundColor: '#87cefa'}}>
       {/* Profile Card */}
       <View
         style={{
@@ -58,7 +63,7 @@ function App() {
           backgroundColor: '#ffffff',
           width: '90%',
           borderRadius: 10,
-          elevation: 5, // Adds shadow for better visibility
+          elevation: 20, // Adds shadow for better visibility
           alignItems: 'center',
           marginBottom: 30,
         }}>
@@ -70,6 +75,10 @@ function App() {
             height: 120,
             borderRadius: 60,
             marginBottom: 10,
+            elevation: 50,
+            shadowColor: '#0000cd',
+            shadowOpacity: 0.3, 
+            shadowRadius: 30,
           }}
         />
         <Text style={{color: '#888', marginBottom: 20}}>
@@ -88,6 +97,7 @@ function App() {
             <Image
               source={require('./src/assets/linkedIn.png')}
               style={{height: 30, width: 30}}></Image>
+
             <Text
               style={{color: '#333', fontSize: 16}}
               onPress={() =>
@@ -103,7 +113,11 @@ function App() {
             <Image
               source={require('./src/assets/github.png')}
               style={{height: 30, width: 30}}></Image>
-            <Text style={{color: '#333', fontSize: 16}} onPress={()=>Linking.openURL('https://github.com/hansh0606')}>GitHub</Text>
+            <Text
+              style={{color: '#333', fontSize: 16}}
+              onPress={() => Linking.openURL('https://github.com/hansh0606')}>
+              GitHub
+            </Text>
           </View>
         </View>
       </View>
@@ -140,7 +154,9 @@ function App() {
                   marginBottom: 5,
                   backgroundColor: '#ffffff',
                 }}>
-                <Text style={{fontSize: 18, fontWeight: 'bold'}}>
+                <Text
+                  style={{fontSize: 18, fontWeight: 'bold'}}
+                  onPress={() => Linking.openURL(item.link)}>
                   {item.projectName}
                 </Text>
                 <Text style={{fontSize: 14, color: '#888'}}>
