@@ -81,7 +81,7 @@ function App() {
             shadowRadius: 30,
           }}
         />
-        <Text style={{color: '#888', marginBottom: 20}}>
+        <Text style={{color: '#888', marginBottom: 20}} onPress={()=>Linking.openURL("mailto:hanshpatil1982@gmail.com")}>
           hanshpatil1982@gmail.com
         </Text>
 
