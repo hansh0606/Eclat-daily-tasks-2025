@@ -20,7 +20,7 @@ const projects = [
   },
   {
     id: '2',
-    projectName: 'Landmine Type Detection',
+    projectName: 'Landmine Types',
     description:
       'AI/ML-based object detection system for landmine categorization.',
     technologies: 'YOLO, AI, Object Detection',
@@ -77,11 +77,13 @@ function App() {
             marginBottom: 10,
             elevation: 50,
             shadowColor: '#0000cd',
-            shadowOpacity: 0.3, 
+            shadowOpacity: 0.3,
             shadowRadius: 30,
           }}
         />
-        <Text style={{color: '#888', marginBottom: 20}} onPress={()=>Linking.openURL("mailto:hanshpatil1982@gmail.com")}>
+        <Text
+          style={{color: '#888', marginBottom: 20}}
+          onPress={() => Linking.openURL('mailto:hanshpatil1982@gmail.com')}>
           hanshpatil1982@gmail.com
         </Text>
 
@@ -152,6 +154,8 @@ function App() {
                   flexDirection: 'row',
                   justifyContent: 'space-between',
                   marginBottom: 5,
+                  marginLeft: 10,
+                  marginRight: 10,
                   backgroundColor: '#ffffff',
                 }}>
                 <Text
@@ -163,7 +167,9 @@ function App() {
                   {item.technologies}
                 </Text>
               </View>
-              <Text style={{color: '#555'}}>{item.description}</Text>
+              <Text style={{color: '#555', marginLeft: 10, marginRight: 10}}>
+                {item.description}
+              </Text>
             </View>
           );
         }}
