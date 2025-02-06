@@ -24,7 +24,7 @@ const style = {
     alignItems: 'center',
     marginBottom: 30,
     display: 'flex',
-    width: isTablet ? '80%' : '90%',  // Restrict width for tablet
+    //width: isTablet ? '80%' : '90%',  // Restrict scroll feature of flatlist
   },
 
   profileImage: {
