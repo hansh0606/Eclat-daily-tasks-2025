@@ -17,14 +17,14 @@ const style = {
     marginTop: isTablet ? 40 : 30,  // Larger margin on tablet
     padding: isTablet ? 30 : 20,  // Larger padding on tablet
     backgroundColor: '#ffffff',
-    marginLeft: 10,
-    marginRight: 10,
+    marginLeft: isTablet?100:10,
+    marginRight: isTablet?100:10,
     borderRadius: 10,
     elevation: 20, 
     alignItems: 'center',
     marginBottom: 30,
     display: 'flex',
-    //width: isTablet ? '80%' : '90%',  // Restrict scroll feature of flatlist
+    //width: isTablet ? '80%' : '90%',  // Restrict width for tablet
   },
 
   profileImage: {
@@ -46,9 +46,11 @@ const style = {
 
   MainContactView: {
     flexDirection: 'row',
-    justifyContent: 'space-around',
+    justifyContent: 'space-between',
     width: '100%',
     marginBottom: 10,
+    paddingLeft:isTablet ? 160: 10,
+    paddingRight:isTablet ? 160: 10
   },
 
   contactView: {
