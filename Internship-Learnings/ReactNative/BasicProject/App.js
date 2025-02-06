@@ -54,6 +54,7 @@ const projects = [
 ];
 
 function App() {
+  console.log("Entered In App");
   return (
     <View style={style.Main_container}>
       {/* Profile Card */}
