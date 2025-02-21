@@ -14,13 +14,9 @@ This is a simple calculator application developed in Android using **LinearLayou
 - **Event Handling:** Handling button clicks using `onClick` method.
 - **Toast Messages:** Implementing error handling for empty input fields and division by zero.
 
-## UI Screenshots
-![Calculator UI](calculator_screenshot.png) *(Add your screenshot here)*
-
 ## Working Video
 - [Watch Demo Video 1](https://drive.google.com/file/d/1lWLCTuS-5DhwW0TwudxW7we_rQhH3GUC/view?usp=drive_link)  
  
-
 ## Code Structure
 ### `activity_main.xml`
 Defines the UI layout with:
