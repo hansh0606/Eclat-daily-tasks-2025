@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">LearningViews_Layouts</string>
+    <string name="AchievementsPara">
+        "\nCompetitive Agility:\n
+    •	240+ questions solved on LeetCode: Enhanced problem-solving skills through consistent practice.\n
+    •	Achieved ACPC rank 2025 in Gujarat State: Demonstrated strong competitive performance in state-level exams. \n
+    •	AIR 6 in NCAT 2024: Ranked among the top in the National Creativity Aptitude Test, showcasing creativity and aptitude.\n
+    \nCertification:\n
+    •	Master the Fundamentals and Advanced Concepts of DBMS : Gained in-depth knowledge of database management systems.\n
+    \nHackathons:\n
+    •	Participated in Flipkart Grid 5.0: Advanced to the second round, demonstrating strong understanding and application of core computer science concepts.\n
+    •	Ace Hacks (Jaipur): Collaborated on a project that addressed real-world challenges.\n
+    •	DU Hacks (Nadiad): Engaged in problem-solving with peers, enhancing teamwork and technical skills.
+"</string>
+    <string name="AboutPara">
+        ‍💻 Hanshvee Patil | B.Tech IT | Dharmsinh Desai University
+        \n💼 Intern at ECLAT, learning 📱 React Native and Android App development
+        \n🚀 Passionate about building intuitive and efficient applications!
+    </string>
+</resources>

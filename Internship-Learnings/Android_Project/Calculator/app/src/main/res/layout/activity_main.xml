@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Calculator using Android"
+        android:textStyle="italic"
+        android:textSize="30dp" />
+    <TextView
+        android:id="@+id/Ans"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Result: "
+        android:padding="5dp"
+        android:textSize="30dp" />
+    <EditText
+        android:id="@+id/NUM1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Number 1"
+        android:inputType="number"
+        android:textSize="30dp" />
+
+    <EditText
+        android:id="@+id/NUM2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Number 2"
+        android:inputType="number"
+        android:textSize="30dp" />
+
+    <Button
+        android:id="@+id/Add"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onClickExampleMethod"
+        android:text="Add" />
+
+    <Button
+        android:id="@+id/Sub"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onClickExampleMethod"
+        android:text="Subtract" />
+
+    <Button
+        android:id="@+id/Mul"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onClickExampleMethod"
+        android:text="Multiply" />
+
+    <Button
+        android:id="@+id/Div"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onClickExampleMethod"
+        android:text="Divide" />
+</LinearLayout>
