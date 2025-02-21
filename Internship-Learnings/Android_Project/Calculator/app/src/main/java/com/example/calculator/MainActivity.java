@@ -37,9 +37,9 @@ public class MainActivity extends AppCompatActivity {
             return;
         }
 
-        int number1 = Integer.parseInt(input1);
-        int number2 = Integer.parseInt(input2);
-        int res = 0;
+        double number1 = Integer.parseInt(input1);
+        double number2 = Integer.parseInt(input2);
+        double res = 0;
 
         // Perform operation based on clicked button
         if (view.getId() == R.id.Add) {
